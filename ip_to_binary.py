@@ -5,7 +5,6 @@ def ip_to_binary(ip_address):
     binary_string += format(int(octet), "08b")
   return binary_string
 
-
 def binary_to_ip(binary_number):
   """Converts a binary number to IP address."""
   ip_address = ""
@@ -13,7 +12,6 @@ def binary_to_ip(binary_number):
     octet = binary_number[i:i + 8]
     ip_address += str(int(octet, 2)) + "."
   return ip_address[:-1]
-
 
 def main():
   ip_address = input("Enter an IP address: ")
